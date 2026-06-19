@@ -2,9 +2,47 @@
    Add anything Tailwind can't express here; loaded after the Tailwind CDN. */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor targets so the sticky header doesn't cover headings. */
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-feature-settings: "ss01", "cv01";
+}
+
+/* Fraunces ships with "wonky" letterforms on by default (the curly italic l,
+   single-story g). Turn WONK off for cleaner, more legible headings while
+   keeping optical sizing automatic. */
+.font-serif {
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+/* Scroll-reveal: elements with .reveal fade + rise into view. */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

@@ -1,6 +1,7 @@
 # lorrainenunez.com
 
-Static website for **lorrainenunez.com** — a sandbox for trying out designs.
+Personal portfolio for **Lorraine Nuñez** — bilingual integrated marketing strategist.
+A single-page, editorial-style site (about, experience, skills, contact).
 Plain HTML + [Tailwind Play CDN](https://tailwindcss.com/docs/installation/play-cdn)
 (no build step). Hosted free on **GitHub Pages**, auto-deployed on every push to `master`.
 

@@ -3,43 +3,351 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lorraine Nunez</title>
-  <meta name="description" content="Lorraine Nunez — portfolio." />
-  <link rel="icon" href="data:," />
+  <title>Lorraine Nuñez — Marketing Manager</title>
+  <meta name="description" content="Lorraine Nuñez is a bilingual marketing manager building culture-first campaigns for media and entertainment brands — Warner Bros. Discovery, HBO Max, Univision, and TelevisaUnivision." />
+  <meta name="author" content="Lorraine Nuñez" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Georgia,serif'%3ELN%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lorraine Nuñez — Marketing Manager" />
+  <meta property="og:description" content="Bilingual marketing manager building culture-first campaigns for media & entertainment brands." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lorrainenunez.com" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Tailwind Play CDN: no build step, edit and reload. -->
   <!-- For the permanent production site, swap this for a compiled Tailwind build. -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory:   "#FBF7F0",
+            cream:   "#F3ECE0",
+            ink:     "#211B16",
+            stone:   "#6B5F54",
+            clay:    "#B85C38",
+            gold:    "#A98A4B",
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body class="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-  <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-6 text-center">
-    <p class="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-400">Portfolio</p>
-    <h1 class="text-5xl font-semibold tracking-tight sm:text-7xl">
-      Lorraine Nunez
-    </h1>
-    <p class="mt-6 max-w-xl text-lg text-neutral-400">
-      Trying out some designs. This page is a living sandbox — edit
-      <code class="rounded bg-neutral-800 px-1.5 py-0.5 text-sm text-neutral-200">index.html</code>
-      and push to <code class="rounded bg-neutral-800 px-1.5 py-0.5 text-sm text-neutral-200">master</code> to deploy.
-    </p>
 
-    <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-      <a href="#" class="rounded-full bg-neutral-100 px-6 py-3 text-sm font-medium text-neutral-900 transition hover:bg-white">
-        Work
-      </a>
-      <a href="#" class="rounded-full border border-neutral-700 px-6 py-3 text-sm font-medium text-neutral-200 transition hover:border-neutral-500">
-        Contact
-      </a>
-    </div>
+<body class="bg-ivory font-sans text-ink antialiased selection:bg-clay/20">
+
+  <!-- ===== Nav ===== -->
+  <header class="sticky top-0 z-40 border-b border-ink/5 bg-ivory/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <a href="#top" class="font-serif text-lg font-semibold tracking-tight">Lorraine&nbsp;Nuñez</a>
+      <div class="hidden items-center gap-8 text-sm text-stone sm:flex">
+        <a href="#about" class="transition hover:text-clay">About</a>
+        <a href="#experience" class="transition hover:text-clay">Experience</a>
+        <a href="#skills" class="transition hover:text-clay">Skills</a>
+        <a href="#contact" class="rounded-full border border-ink/15 px-4 py-1.5 transition hover:border-clay hover:text-clay">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="mx-auto max-w-5xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
+      <p class="reveal mb-6 flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-clay">
+        <span class="h-px w-8 bg-clay"></span>
+        Marketing Manager
+      </p>
+      <h1 class="reveal font-serif text-5xl font-light leading-[1.05] tracking-tight sm:text-7xl">
+        Campaigns built at the<br class="hidden sm:block" />
+        intersection of <em class="font-normal italic text-clay">culture</em>,<br class="hidden sm:block" />
+        story &amp; commerce.
+      </h1>
+      <p class="reveal mt-8 max-w-2xl text-lg leading-relaxed text-stone">
+        I'm Lorraine — a bilingual, bicultural marketer who turns audience insight into
+        work that moves people <span class="text-ink">and</span> meets real commercial goals.
+        Five years shaping go-to-market strategy and brand partnerships for some of the
+        biggest names in media and entertainment.
+      </p>
+      <div class="reveal mt-10 flex flex-wrap items-center gap-4">
+        <a href="#contact" class="rounded-full bg-ink px-6 py-3 text-sm font-medium text-ivory transition hover:bg-clay">
+          Let's work together
+        </a>
+        <a href="#experience" class="rounded-full border border-ink/15 px-6 py-3 text-sm font-medium transition hover:border-clay hover:text-clay">
+          See my experience
+        </a>
+      </div>
+      <p class="reveal mt-10 text-sm text-stone/80">
+        📍 Miami, FL &nbsp;·&nbsp; 🗣️ English &amp; Español &nbsp;·&nbsp; Media &amp; Entertainment
+      </p>
+    </section>
+
+    <!-- ===== Marquee of brands ===== -->
+    <section class="border-y border-ink/5 bg-cream/40">
+      <div class="mx-auto max-w-5xl px-6 py-8">
+        <p class="mb-5 text-center text-xs uppercase tracking-[0.25em] text-stone/70">Trusted with the work of</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-serif text-lg text-stone sm:text-xl">
+          <span>Warner Bros. Discovery</span>
+          <span class="text-clay/40">◆</span>
+          <span>HBO Max Latino América</span>
+          <span class="text-clay/40">◆</span>
+          <span>TelevisaUnivision</span>
+          <span class="text-clay/40">◆</span>
+          <span>Univision</span>
+          <span class="text-clay/40">◆</span>
+          <span>Genius</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+      <div class="grid gap-12 sm:grid-cols-[1fr_2fr] sm:gap-16">
+        <div class="reveal">
+          <p class="flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-clay">
+            <span class="h-px w-8 bg-clay"></span> About
+          </p>
+        </div>
+        <div class="reveal space-y-6 font-serif text-2xl font-light leading-snug sm:text-[1.75rem]">
+          <p>
+            I build integrated campaigns that reach multicultural and Hispanic audiences
+            in a way that feels <em class="italic text-clay">native, not translated.</em>
+          </p>
+          <p class="text-xl leading-relaxed text-stone sm:text-[1.35rem]">
+            From RFP response to final asset delivery, I've led cross-functional teams across
+            Sales, Product, Creative, and Strategy — driving <span class="text-ink">$10M+</span>
+            in partnership revenue, hitting <span class="text-ink">6%+</span> engagement rates,
+            and serving as the connective tissue between brands and the people they're trying to reach.
+          </p>
+          <p class="text-xl leading-relaxed text-stone sm:text-[1.35rem]">
+            Whatever the channel — digital, social, editorial, or experiential — I care most
+            about cohesive ideas executed with precision, and stories that earn attention
+            instead of demanding it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="border-t border-ink/5 bg-cream/30">
+      <div class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+        <p class="reveal flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-clay">
+          <span class="h-px w-8 bg-clay"></span> Experience
+        </p>
+        <h2 class="reveal mt-5 font-serif text-4xl font-light tracking-tight sm:text-5xl">
+          A path through media &amp; entertainment
+        </h2>
+
+        <ol class="mt-16 space-y-px">
+
+          <!-- Genius -->
+          <li class="reveal group grid gap-2 border-t border-ink/10 py-8 sm:grid-cols-[180px_1fr] sm:gap-8">
+            <div class="text-sm font-medium text-stone">
+              <p>Apr 2025 — Apr 2026</p>
+              <p class="mt-1 text-stone/70">Miami, FL</p>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-normal">Integrated Marketing Strategist</h3>
+              <p class="mt-1 text-clay">Genius</p>
+              <ul class="mt-4 space-y-2 text-stone">
+                <li>Crafted campaign briefs and proposals across digital, social, editorial, and experiential channels, keeping strategy cohesive and aligned with commercial priorities.</li>
+                <li>Served as key liaison between Sales and internal marketing, responding to client briefs and RFPs with tailored, audience-first solutions.</li>
+                <li>Developed new go-to-market packages tied to cultural tentpoles, expanding partnership opportunities throughout the year.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- TelevisaUnivision -->
+          <li class="reveal group grid gap-2 border-t border-ink/10 py-8 sm:grid-cols-[180px_1fr] sm:gap-8">
+            <div class="text-sm font-medium text-stone">
+              <p>May 2022 — Apr 2025</p>
+              <p class="mt-1 text-stone/70">Miami, FL</p>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-normal">Marketing Manager → Associate Manager</h3>
+              <p class="mt-1 text-clay">TelevisaUnivision · Así Studios Strategy</p>
+              <ul class="mt-4 space-y-2 text-stone">
+                <li>Executed multi-channel demand generation for B2B clients across finance, entertainment, insurance, and telecom — driving <span class="font-medium text-ink">$10M in revenue growth</span>.</li>
+                <li>Optimized paid social to <span class="font-medium text-ink">6%+ engagement rates</span>; tracked and reported on KPIs to keep campaigns performing.</li>
+                <li>Acted as primary liaison for 15+ clients and agencies, presenting strategies and building lasting relationships through data-driven storytelling.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- WBD -->
+          <li class="reveal group grid gap-2 border-t border-ink/10 py-8 sm:grid-cols-[180px_1fr] sm:gap-8">
+            <div class="text-sm font-medium text-stone">
+              <p>Jan 2021 — May 2022</p>
+              <p class="mt-1 text-stone/70">New York, NY</p>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-normal">International Operations Coordinator</h3>
+              <p class="mt-1 text-clay">Warner Bros. Discovery · Global Marketing Operations</p>
+              <ul class="mt-4 space-y-2 text-stone">
+                <li>Managed the approval and distribution of 200+ A/V assets across channels for HBO / HBO Max Latino América.</li>
+                <li>Streamlined post-production for 50+ promotional campaigns as a cross-departmental liaison between Creative Services, Scheduling, and Multicultural Marketing.</li>
+                <li>Boosted multicultural engagement through strategic English-to-Spanish transcreation of promotional assets.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Univision -->
+          <li class="reveal group grid gap-2 border-t border-ink/10 py-8 sm:grid-cols-[180px_1fr] sm:gap-8">
+            <div class="text-sm font-medium text-stone">
+              <p>Aug 2020 — Jul 2021</p>
+              <p class="mt-1 text-stone/70">New York, NY</p>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-normal">Social Media Specialist</h3>
+              <p class="mt-1 text-clay">Univision Communications · Digital Partnerships</p>
+              <ul class="mt-4 space-y-2 text-stone">
+                <li>Built social media calendars for 30+ campaigns and wrote 100+ posts across Twitter, Facebook, Instagram, and TikTok.</li>
+                <li>Responded to B2B RFPs with branded content, digital strategies, and influencer partnerships that helped Sales close deals.</li>
+                <li>Managed end-to-end influencer relationships and delivered 30+ client performance reports to drive optimization.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- WIN -->
+          <li class="reveal group grid gap-2 border-t border-b border-ink/10 py-8 sm:grid-cols-[180px_1fr] sm:gap-8">
+            <div class="text-sm font-medium text-stone">
+              <p>Aug 2020 — Dec 2020</p>
+              <p class="mt-1 text-stone/70">New York, NY</p>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-normal">Community Liaison</h3>
+              <p class="mt-1 text-clay">Women in Negotiation (WIN) Summit</p>
+              <ul class="mt-4 space-y-2 text-stone">
+                <li>Led digital and social communications and hosted WIN's virtual panels focused on women's empowerment.</li>
+                <li>Coordinated end-to-end virtual production for a leading industry summit, from webinars to executive interviews.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+
+        <!-- Education -->
+        <div class="reveal mt-16 flex flex-wrap items-baseline gap-x-4 gap-y-1 border-t border-ink/10 pt-8">
+          <p class="text-sm uppercase tracking-[0.2em] text-clay">Education</p>
+          <p class="font-serif text-xl">Pepperdine University</p>
+          <p class="text-stone">Bachelor of Arts, International Studies</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+      <p class="reveal flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-clay">
+        <span class="h-px w-8 bg-clay"></span> What I bring
+      </p>
+      <h2 class="reveal mt-5 font-serif text-4xl font-light tracking-tight sm:text-5xl">
+        The toolkit
+      </h2>
+
+      <div class="mt-14 grid gap-10 sm:grid-cols-2">
+        <div class="reveal">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-stone">Languages</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">English — Native / Business</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Español — Native / Business</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-stone">Strategy &amp; Craft</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Integrated Campaigns</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Go-to-Market Strategy</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">B2B Partnerships</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Demand Generation</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">RFP &amp; Sales Enablement</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Multicultural Marketing</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Transcreation</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Cross-functional Leadership</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-stone">Systems</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Salesforce</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">HubSpot</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Marketo</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Monday.com</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Jira</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">G Suite</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-stone">Analytics &amp; Creative</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Sprout Social</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Meta Insights</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Keyhole</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Socialbakers</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Canva</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Adobe Lightroom</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">Hootsuite</span>
+            <span class="rounded-full bg-cream px-4 py-2 text-sm">StreamYard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="border-t border-ink/5 bg-ink text-ivory">
+      <div class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+        <p class="reveal flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-clay">
+          <span class="h-px w-8 bg-clay"></span> Get in touch
+        </p>
+        <h2 class="reveal mt-5 max-w-3xl font-serif text-4xl font-light leading-tight tracking-tight sm:text-6xl">
+          Let's build something
+          <span class="italic text-clay">worth talking about.</span>
+        </h2>
+        <p class="reveal mt-6 max-w-xl text-lg text-ivory/70">
+          Open to marketing management, brand partnership, and go-to-market roles —
+          especially where culture and audience are at the center of the work.
+        </p>
+
+        <div class="reveal mt-12 flex flex-wrap gap-4">
+          <a href="https://www.linkedin.com/in/lorraine-nunez" target="_blank" rel="noopener"
+             class="rounded-full bg-ivory px-6 py-3 text-sm font-medium text-ink transition hover:bg-clay hover:text-ivory">
+            Connect on LinkedIn ↗
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="pb-8 text-center text-xs text-neutral-600">
-    &copy; <span id="year"></span> Lorraine Nunez
+  <!-- ===== Footer ===== -->
+  <footer class="bg-ink pb-10 text-center text-xs text-ivory/40">
+    <p>&copy; <span id="year"></span> Lorraine Nuñez · Made in Miami</p>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Lightweight scroll-reveal
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-visible");
+          io.unobserve(e.target);
+        }
+      }
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
   </script>
 </body>
 </html>

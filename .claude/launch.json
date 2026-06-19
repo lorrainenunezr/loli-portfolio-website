@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-c",
+        "import http.server, socketserver; h=http.server.SimpleHTTPRequestHandler; h.directory='/Users/lorrainenunez/Documents/loli-portfolio-website'; socketserver.TCPServer(('',8000), h).serve_forever()"
+      ],
+      "port": 8000
+    }
+  ]
+}
