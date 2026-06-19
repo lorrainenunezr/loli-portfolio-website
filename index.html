@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorraine Nunez</title>
+  <meta name="description" content="Lorraine Nunez — portfolio." />
+  <link rel="icon" href="data:," />
+
+  <!-- Tailwind Play CDN: no build step, edit and reload. -->
+  <!-- For the permanent production site, swap this for a compiled Tailwind build. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
+  <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-6 text-center">
+    <p class="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-400">Portfolio</p>
+    <h1 class="text-5xl font-semibold tracking-tight sm:text-7xl">
+      Lorraine Nunez
+    </h1>
+    <p class="mt-6 max-w-xl text-lg text-neutral-400">
+      Trying out some designs. This page is a living sandbox — edit
+      <code class="rounded bg-neutral-800 px-1.5 py-0.5 text-sm text-neutral-200">index.html</code>
+      and push to <code class="rounded bg-neutral-800 px-1.5 py-0.5 text-sm text-neutral-200">master</code> to deploy.
+    </p>
+
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+      <a href="#" class="rounded-full bg-neutral-100 px-6 py-3 text-sm font-medium text-neutral-900 transition hover:bg-white">
+        Work
+      </a>
+      <a href="#" class="rounded-full border border-neutral-700 px-6 py-3 text-sm font-medium text-neutral-200 transition hover:border-neutral-500">
+        Contact
+      </a>
+    </div>
+  </main>
+
+  <footer class="pb-8 text-center text-xs text-neutral-600">
+    &copy; <span id="year"></span> Lorraine Nunez
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

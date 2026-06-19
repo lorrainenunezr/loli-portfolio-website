@@ -1,0 +1,10 @@
+/* Custom CSS beyond Tailwind utilities.
+   Add anything Tailwind can't express here; loaded after the Tailwind CDN. */
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
